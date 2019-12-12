@@ -31,6 +31,56 @@ void main() {
                   fontSize: 20.0,
                   letterSpacing: 2.5,
                 ),
+              ),
+              Container(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
+                padding: EdgeInsets.all(10.0),
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                        Icons.phone_iphone,
+                        color: Colors.teal.shade900,
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      '+1 647 803 2060',
+                      style: TextStyle(
+                        color: Colors.teal.shade900,
+                        fontSize: 20.0,
+                        fontFamily: 'Source Sans Pro',
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0,horizontal: 25.0),
+                padding: EdgeInsets.all(10.0),
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.email,
+                      color: Colors.teal.shade900,
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      '911@dipsgoswami.in',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        letterSpacing: 1,
+                        fontFamily: 'Source Sans Pro',
+                        color: Colors.teal.shade900
+                      ),
+                    ),
+
+                  ],
+                ),
               )
             ],
           )
