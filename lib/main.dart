@@ -3,44 +3,35 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
+          child: Column(
             children: <Widget>[
-              Container(
-//                child: Text('Container 1'),
-                color: Colors.red,
-                height: 80.0,
-                width: 100.0,
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage('images/dipesh.jpg'),
               ),
-              Container(
-                  width: 200.0,
-                child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Container(
-//                      child: Text('Container 3'),
-                      color: Colors.yellow,
-                      height: 100.0,
-                      width: 100.0,
-                    ),
-                    Container(
-//                      child: Text('Container 4'),
-                      color: Colors.green,
-                      height: 100.0,
-                      width: 100.0,
-                    ),
-                  ],
+              Text(
+                'Dipesh Goswami',
+                style: TextStyle(
+                  fontSize: 40.0,
+                  fontFamily: 'Pacifico',
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(
-//                child: Text('Container 2'),
-                color: Colors.blue,
-                height: 100.0,
-                width: 100.0,
-              ),
+              Text(
+                'SOFTWARE ENGINEER',
+                style: TextStyle(
+                  fontFamily: 'Source Sans Pro',
+                  fontWeight: FontWeight.bold,
+                  color: Colors.teal.shade100,
+                  fontSize: 20.0,
+                  letterSpacing: 2.5,
+                ),
+              )
             ],
           )
         ),
